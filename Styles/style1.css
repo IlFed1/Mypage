@@ -1,13 +1,19 @@
-nav{
-    background-color: rgb(7, 75, 177);
-    color:brown;
+.navbar-nav{
+    background-color: #000fe633;
+    color:rgb(117, 12, 12);
 }
 
 body {
-    background-color: bisque;
+    background-image: url('gym_background/Gym_bkground.jpeg');
     color: blue;
 }
 h1 {
     color: blue;
+    text-align: center;
 
+}
+
+.clients{
+    color: white;
+    text-align: center;
 }
