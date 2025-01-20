@@ -1,19 +1,99 @@
-.navbar-nav{
-    background-color: #000fe633;
-    color:rgb(117, 12, 12);
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 30px;
+    height: 70px;
+    width: 100%;
+    background-color: grey;
+    padding: 0 auto;
 }
+
 
 body {
-    background-image: url('gym_background/Gym_bkground.jpeg');
-    color: blue;
-}
-h1 {
-    color: blue;
-    text-align: center;
-
+    height: auto;
+    background-color: antiquewhite;
 }
 
-.clients{
+nav .nav-bar{
+    position: relative;
+    height: 100%;
+    max-width: 1000px;
+    width: 100%;
+    background-color: rgb(139, 107, 37);
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav-bar .logo a{
+    font-size: 50px;
+    font-weight: 500;
+    width: 0;
+    color:rgb(248, 244, 245);
+    text-decoration: none;
+    
+}
+
+nav .nav-bar .logo a:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: #34efdf;
+    transition: all 0.4s ease;
+}
+
+nav .nav-bar .logo a:hover:before{
+    width: 15%;
+    color:rgb(4, 8, 15);
+}
+
+
+.nav-links li a:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: #34efdf;
+    transition: all 0.4s ease;
+}
+
+.nav-links li a:hover:before{
+    width: 100%;
+}
+
+.nav-bar .nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .nav-links li{
+    margin: 0 5px;
+    list-style: none;
+}
+
+.nav-links li a{
+    position: relative;
+    font-size: 17px;
+    font-weight: 400;
     color: white;
-    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+h1{
+    font-family: Arial;
+    font-size: 50;
+    padding-top: 70px;
+    color:rgb(4, 8, 15);
+    
+
 }
